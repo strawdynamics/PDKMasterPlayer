@@ -1,0 +1,128 @@
+[
+	 {
+		"attack":0,
+		"decay":0.15000000596046,
+		"instrument": {
+			"id":4,
+			"name":"Sawtooth"
+		},
+		"isMuted":true,
+		"isSolo":false,
+		"notes": [
+		],
+		"polyphony":0,
+		"release":0,
+		"sustain":0.20000000298023,
+		"volume":0.20000000298023
+	},
+	 {
+		"attack":0,
+		"decay":0.15000000596046,
+		"instrument": {
+			"id":6,
+			"name":"PODigital"
+		},
+		"isMuted":false,
+		"isSolo":false,
+		"notes": [
+			48,
+			52,
+			55,
+			59
+		],
+		"polyphony":2,
+		"release":0,
+		"sustain":0.20000000298023,
+		"volume":0.20000000298023
+	},
+	 {
+		"attack":0,
+		"decay":0.15000000596046,
+		"instrument": {
+			"id":0,
+			"name":"Square"
+		},
+		"isMuted":false,
+		"isSolo":false,
+		"notes": [
+			43,
+			48,
+			50,
+			52,
+			53,
+			55,
+			57,
+			59,
+			60
+		],
+		"polyphony":2,
+		"release":0,
+		"sustain":0.20000000298023,
+		"volume":0.15000000596046
+	},
+	 {
+		"attack":0,
+		"decay":0.15000000596046,
+		"instrument": {
+			"id":"com.ninovanhooff.masterplayer.choir-ah",
+			"name":"ChoirAh"
+		},
+		"isMuted":false,
+		"isSolo":false,
+		"notes": [
+			48,
+			55,
+			57
+		],
+		"polyphony":2,
+		"release":0.40000000596046,
+		"sustain":0.20000000298023,
+		"volume":0.35000004768372
+	},
+	 {
+		"attack":0,
+		"decay":0.15000000596046,
+		"instrument": {
+			"id":"com.ninovanhooff.masterplayer.drums-electric",
+			"name":"Drums-E"
+		},
+		"isMuted":false,
+		"isSolo":false,
+		"notes": [
+			36,
+			38,
+			39,
+			42,
+			46,
+			53
+		],
+		"polyphony":3,
+		"release":0,
+		"sustain":0.20000000298023,
+		"volume":0.20000000298023
+	},
+	 {
+		"attack":0,
+		"decay":0.15000000596046,
+		"instrument": {
+			"id":"com.ninovanhooff.masterplayer.drums-pd",
+			"name":"Drums-PD"
+		},
+		"isMuted":false,
+		"isSolo":false,
+		"notes": [
+			36,
+			38,
+			39,
+			41,
+			42,
+			45,
+			49,
+			53
+		],
+		"polyphony":3,
+		"release":0,
+		"sustain":0.20000000298023,
+		"volume":0.20000000298023
+	}
+]
