@@ -180,8 +180,14 @@ class Song {
 		guard let track = ctx.currentTrack else { return }
 		if let cPath = dptr.pointee.path {
 			let path = String(cString: cPath).utf8
+			let type = json_value_type(rawValue: numericCast(val.type))!
+
 			if path.hasSuffix(".notes") {
-				track.notes.append(MIDINote(val.data.intval))
+				if type == json_value_type.integer {
+					track.notes.append(MIDINote(val.data.intval))
+				} else if type == json_value_type.float {
+					track.notes.append(MIDINote(val.data.floatval))
+				}
 			}
 		}
 	}
