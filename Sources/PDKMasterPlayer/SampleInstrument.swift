@@ -1,4 +1,5 @@
 import PlaydateKit
+import UTF8ViewExtensions
 
 public class SampleInstrument {
 	static nonisolated(unsafe) var instruments: [String.UTF8View: SampleInstrument] = [:]

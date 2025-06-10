@@ -10,6 +10,7 @@ let package = Package(
 	],
 	dependencies: [
 		.package(url: "https://github.com/finnvoor/PlaydateKit.git", branch: "main"),
+		.package(url: "https://github.com/strawdynamics/UTF8ViewExtensions.git", branch: "main"),
 	],
 	targets: [
 		.target(
