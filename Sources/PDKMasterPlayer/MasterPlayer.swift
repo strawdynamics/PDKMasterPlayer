@@ -36,7 +36,27 @@ public class MasterPlayer {
 	}
 
 	public func play() {
-		sequence.setLoops(startStep: 0, endStep: sequence.length)
+		play(loopStartStep: 0)
+	}
+
+	/// If `loopStartStep` or `loopEndStep` are negative, they're used as an offset from the end of the sequence.
+	public func play(loopStartStep: Int, loopEndStep: Int? = nil) {
+		play(fromStep: 0, loopStartStep: loopStartStep, loopEndStep: loopEndStep)
+	}
+
+	/// If `fromStep`, `loopStartStep` or `loopEndStep` are negative, they're used as an offset from the end of the sequence.
+	public func play(fromStep: Int, loopStartStep: Int = 0, loopEndStep: Int? = nil) {
+		let seqLen = sequence.length
+		let from = fromStep < 0 ? seqLen + fromStep : fromStep
+		let start = loopStartStep < 0 ? seqLen + loopStartStep : loopStartStep
+		let end = loopEndStep.map { $0 < 0 ? seqLen + $0 : $0 } ?? sequence.length
+
+		sequence.setLoops(
+			startStep: start,
+			endStep: end
+		)
+
+		sequence.setCurrentStep(from)
 		sequence.play()
 	}
 
