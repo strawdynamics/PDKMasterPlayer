@@ -13,6 +13,7 @@ public class SampleInstrument {
 			}
 
 			let sample = Sound.Sample(path: samplePath)!
+			_ = sample.decompress()
 			samples[samplePath.utf8] = sample
 
 			return sample
